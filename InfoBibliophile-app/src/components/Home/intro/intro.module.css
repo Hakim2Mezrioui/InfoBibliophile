@@ -1,0 +1,129 @@
+.carousel {
+  /* height: 50%; */
+  /* display: flex;    */
+  /* scroll-snap-align: start; */
+}
+
+.carousel img {
+  aspect-ratio: 16/9;
+  height: 70vh;
+  object-fit: 20% 20%;
+  object-position: center;
+}
+
+.intro-container {
+  text-align: justify;
+  background-color: rgb(
+    101,
+    59,
+    26
+  ); /* Brown background color (adjust as needed) */
+  color: #fff; /* White text color for contrast */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 100%; /* Full width */
+  margin: 0;
+  border-radius: 0; /* No border radius */
+  height: 25vh;
+}
+
+.intro-container > div {
+  background-color: rgba(211, 211, 211, 0.541);
+  width: fit-content;
+  width: 75%;
+  margin: auto;
+  padding: 1em 3em;
+  border-radius: .5em;
+  min-width: 75em;
+}
+
+.intro-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Arial", sans-serif; /* Set your desired font */
+  padding-left: 5em;
+}
+
+.intro-title span {
+  color: lightgray;
+}
+
+.intro-text {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Arial", sans-serif; /* Set your desired font */
+  padding-top: 1em;
+}
+
+.intro-text span {
+  color: rgb(254, 243, 207);
+}
+
+@media (max-width: 1700px) {
+  .intro-title {
+    padding-left: 3em;
+  }
+}
+
+@media (max-width: 1500px) {
+  .intro-title {
+    padding-left: 1em;
+  }
+}
+
+@media (max-width: 1400px) {
+  .carousel img {
+    height: 65vh;
+  }
+
+  .intro-container {
+    height: 35vh;
+  }
+
+  .intro-container div {
+    min-width: 65em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .carousel img {
+    height: 60vh;
+  }
+
+  .intro-container {
+    height: 40vh;
+  }
+
+  .intro-container div {
+    min-width: 40em;
+  }
+}
+
+@media (max-width: 800px) {
+  .carousel img {
+    height: 50vh;
+  }
+
+  .intro-container {
+    height: 50vh;
+  }
+
+  .intro-container div {
+    min-width: 30em;
+  }
+}
+
+@media (max-width: 640px) {
+  .carousel img {
+    height: 40vh;
+  }
+
+  .intro-container {
+    height: 60vh;
+  }
+
+  .intro-container div {
+    min-width: 25em;
+  }
+}
